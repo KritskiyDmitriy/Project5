@@ -1,0 +1,466 @@
+@font-face {
+  font-family: GothamRounded;
+  src: url(../fonts/GothamRounded.otf); 
+}
+* {
+  box-sizing: border-box; 
+}
+
+body {
+  margin: 0 auto; 
+  }
+
+header {
+  background: url(../images/headpic.png) center no-repeat;
+  margin: 0 auto; 
+  }
+
+.wrapper {
+  width: 1210px;
+  margin: 0 auto;
+  padding-top: 2px; 
+}
+
+.firstBlock {
+  margin-top: 250px; 
+  }
+
+.firstBlock h1 {
+  color: #353535;
+  font-family: GothamRounded;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center; 
+  }
+
+.firstBlock span {
+  color: #a1a9b0; 
+  }
+
+.firstBlock p {
+  color: #8c9398;
+  font-family: GothamRounded;
+  font-size: 20px;
+  text-align: center; 
+  }
+
+.firstBlock p span {
+  font-style: italic; 
+  }
+  
+  .buttonHeader{
+    text-align: center;
+  }
+
+  .buttonHeader button{
+    width: 200px;
+    height: 60px;
+    background-color: #3dc9b3;
+    border-radius: 5px;
+    margin: 65px 0 300px 0;
+  }
+
+  .buttonHeader p{
+    text-align: center;
+    color: white;
+    font-family: GothamRounded;
+    font-size: 15px;
+  }
+
+/*_____________________________________________________________
+Начинаю использовать БЭМ*/
+.creativeMain{
+  margin: 0 auto;
+  height: 486px;
+  background-color: #f3f5f8;
+}
+.creative,
+.love{
+  margin-top: 105px;
+
+}
+
+h3{
+  text-align: center;
+  color: #353535;
+  font-family: GothamRounded;
+  font-size: 15px;
+}
+h3::after{
+  content: url(../images/triangle.png);
+  margin-top: 26px;
+  display: block;
+  text-align: center;
+
+}
+.creative__text{
+font-family: GothamRounded;
+font-size: 14px;
+color: #8c9398;
+font-weight: 500;
+line-height: 30px;
+text-align: center;
+
+}
+
+.creative__text span{
+  color: #353535;
+}
+.love__icons{
+  display:flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    background-color: #3dc9b3; 
+    border-radius: 50%;
+    position: relative;
+}
+.computer::before{
+  content:url(../images/computer.png);
+  background-position: top center;
+    background-repeat: no-repeat;
+  position: absolute;
+  top: 50px;
+  left: 41px;
+}
+
+.leftRight::before{
+  content: url(../images/leftRight.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50px;
+  left: 42px; 
+}
+
+.heart::before{
+  content: url(../images/heart.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50px;
+  left: 44px;
+}
+
+/*.icon:nth-child(2) {
+  margin: 0 53px;
+}*/
+h4{
+  color: #353535;
+  font-family: GothamRounded;
+  /*font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;*/
+}
+.love__icons p{
+  width: 339px;
+  height: 94px;
+  color: #8c9398;
+  font-family: GothamRounded;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.love__icons h4:after{
+  content: '';
+  margin: 26px auto;
+  display: block;
+  width: 33px;
+  height: 3px;
+  background-color: #3dc9b3;
+}
+.iphoneBlock{
+  display:block;
+  margin-top: 122px;
+}
+.iphone{
+  background-color: #f3f5f8
+}
+.responsive{
+      position: absolute;
+    width: 600px;
+    background-color: white;
+    margin-top: -650px;
+    margin-left: 610px;
+    height: 650px;
+}
+.responsive h3{
+  margin-top: 134px;
+}
+.responsive p{
+margin-top:44px;
+text-align: center;
+height: 194px;
+color: #8c9398;
+font-family: GothamRounded;
+font-size: 14px;
+font-weight: 500;
+line-height: 20px;
+}
+.rings{
+  position: relative;
+  text-align: center;
+  }
+  .litrings a:hover{
+  content: '';
+  background-color: black;
+}
+.litrings a{
+  margin-top: 130px;
+  display: inline-block;
+  border-radius: 50%;
+  border:1px solid black;
+  width: 14px;
+  height: 14px;
+}
+.problemsBlock{
+  background: url(../images/problems.png)center no-repeat;
+  margin-top: 0 auto
+}
+.problems{
+  margin-top: 81px;
+  height: 300px;
+
+}
+.problems h2{
+  text-align: center;
+  color: white;
+  font-family: GothamRounded;
+  font-size: 40px;
+  font-weight: 300;
+}
+.problems p{
+  text-align: center;
+  color: white;
+  font-family: GothamRounded;
+  font-size: 25px;
+  font-weight: 300;
+}
+.problems span{
+  color: white;
+  font-family: GothamRounded;
+  font-size: 25px;
+  font-weight: 500;
+  font-style: italic;
+}
+.circle__little{
+  /*border: none;*/
+  display: block;
+margin: 0 auto;
+  width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    position: relative;
+    background-color: #3dc9b3;
+}
+.circle__little:after{
+  content:url(../images/down.png);
+    position: absolute;
+    top: 15px;
+    left: 11px;
+}
+.picture{
+  display:flex ;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 60px;
+}
+.picture h4:after{
+  content: '';
+  margin: 26px auto;
+  display: block;
+  width: 33px;
+  height: 3px;
+  background-color: #3dc9b3;
+}
+.image{
+  display: inline-block;
+  position: relative;
+}
+.image:hover::after{
+content: '';
+  position: absolute;
+  background:#3ab25c;
+  opacity: 0.2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.three__picture .litrings a{
+  margin-top: 72px;
+  display: inline-block;
+  border-radius: 50%;
+  border:1px solid black;
+  width: 14px;
+  height: 14px;
+}
+.keyboardBlock{
+  background: url(../images/keyboard.png) center no-repeat;
+  margin-top: 104px;
+  height: 540px;
+}
+.keyboard p{
+color: white;
+font-family: GothamRounded;
+font-size: 15px;
+font-weight: 500;
+text-align: center;
+margin-top: 173px;
+}
+.keyboard p:before{
+  content: url(../images/plain.png);
+  display: block;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.input{
+  text-align: center;
+  margin-top: 46px;
+}
+.input input{
+  display:inline-block;
+  background:none;
+  width: 353px;
+  height: 67px;
+}
+.input button{
+width: 99px;
+height: 68px;
+background-color: #3dc9b3;
+margin-left: -6px;
+}
+.input button p{
+color: white;
+font-family: GothamRounded;
+font-size: 15px;
+font-weight: 500;
+}
+.circle__little2{
+  display: block;
+  margin: 113px auto;
+  width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    position: relative;
+    background-color: #3dc9b3;
+    opacity: .8
+}
+.circle__little2:after{
+  content:url(../images/up.png);
+    position: absolute;
+    top: 13px;
+    left: 11px;
+}
+.dropBlock{
+  margin-top: 102px;
+}
+.contactsBlock{
+  margin-top: 160px;
+}
+.contact{
+  display:flex;
+  justify-content: space-around;
+}
+.contact h5{
+color: #3dc9b3;
+font-family: GothamRounded;
+font-size: 14px;
+text-align: center;
+}
+.adress,
+.phone  p{
+color: #8c9398;
+font-family: GothamRounded;
+font-size: 14px;
+}
+.e-mail p{
+ color: #242830;
+font-family: GothamRounded;
+font-size: 14px;
+}
+.adress:before{
+  content: url(../images/geoposition.png);
+    text-align: center;
+    display: block;
+}
+.phone:before{
+  content: url(../images/phone.png);
+    text-align: center;
+    display: block;
+}
+.e-mail:before{
+  content: url(../images/plainbl.png);
+    text-align: center;
+    display: block;
+}
+.lastIcons{
+  text-align: center;
+}
+.lastLink{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-color: #d4d4d4;
+  margin:99px 21px 0 21px;
+  padding: 13px;
+  border-radius: 50%;
+  left: 16px;
+}
+
+.lastLink img{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.lastLink:hover{
+   background: #3dc9b3;
+}
+
+.lastLink:nth-child(1) img{
+  top: 12px;
+  left: 12px;
+}
+
+.lastLink:nth-child(2) img{
+  top: 13px;
+  left: 12px;
+}
+
+.lastLink:nth-child(3) img{
+  top: 12px;
+  left: 11px;
+}
+footer{
+    display: block;
+    position: relative;
+    background: #242830;
+    margin: 0 auto;
+    top: 90px;
+}
+.lastbl{
+      display: flex;
+    justify-content: space-around;
+    margin-top: 55px;
+}
+.lastbl p{
+font-family: GothamRounded;
+font-size: 14px;
+color: white;
+}
+.lastbl span{
+font-family: GothamRounded;
+font-size: 14px;
+color: #a1a9b0;
+}
+
+
